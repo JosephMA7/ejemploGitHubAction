@@ -9,7 +9,9 @@ jobs:
     steps:
       - name: mostrar texto
         run: echo "Hola Mundo"
-
+      - name: Clonar repositorio
+        uses: actions/checkout@v4.2.2
+        
   build:
     runs-on: windows-latest
     needs: [inicio]
