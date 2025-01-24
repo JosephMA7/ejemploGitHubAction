@@ -17,14 +17,14 @@ jobs:
       - name: texto
         run: echo "Construir"
 
-  bluid:
+  test:
     runs-on: windows-latest
     needs: [build]
     steps:
       - name: texto
         run: echo "test"
   
-  bluid:
+  deploy:
     runs-on: windows-latest
     needs: [test]
     steps:
